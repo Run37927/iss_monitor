@@ -7,6 +7,9 @@ screen.setup(1000, 500)
 screen.bgpic('earth.png')
 screen.setworldcoordinates(-180, -90, 180, 90)
 
+iss = turtle.Turtle()
+turtle.register_shape("iss.gif")
+iss.shape("iss.gif")
 
 url = 'http://api.open-notify.org/iss-now.json'
 response = requests.get(url)
